@@ -242,30 +242,17 @@ class ShopService {
         if (htmlContent != null) {
           print('[ShopService] Initial HTML content received, parsing preview shops.');
           List<Shop> shops = _parsePreviewShops(htmlContent);
-          print('[ShopService] Parsed ${shops.length} preview shops. Now fetching details for delivery days...');
+          print('[ShopService] Parsed ${shops.length} preview shops. Now fetching details concurrently...');
 
-          // Iterate and fetch details for each shop
+          List<Future<void>> detailFetchFutures = [];
           for (var shop in shops) {
-            if (shop.detailsUrl.isNotEmpty) {
-              try {
-                print('[ShopService] Fetching details for ${shop.name} from ${shop.detailsUrl}');
-                final detailResponse = await http.get(Uri.parse(shop.detailsUrl), headers: {
-                   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'
-                });
-                if (detailResponse.statusCode == 200) {
-                  shop.deliveryDay = Shop.parseDeliveryDayFromDetailHtml(detailResponse.body);
-                  print('[ShopService] Updated ${shop.name} with delivery day: ${shop.deliveryDay}');
-                } else {
-                  print('[ShopService] Error fetching details for ${shop.name}: Status code ${detailResponse.statusCode}');
-                }
-              } catch (e) {
-                print('[ShopService] Error fetching/parsing details for ${shop.name}: $e');
-              }
-            } else {
-              print('[ShopService] Skipping details for ${shop.name} due to empty URL.');
-            }
+            detailFetchFutures.add(_fetchAndParseShopDetails(shop));
           }
+          
+          await Future.wait(detailFetchFutures); // Wait for all detail fetching to complete
+          
           print('[ShopService] Finished fetching all details.');
+          shops.forEach((s) => print('[ShopService] Final shop data: ${s.name}, Delivery: ${s.deliveryDay}'));
           return shops;
         } else {
           print('[ShopService] Error: Initial HTML content is null.');
@@ -278,6 +265,28 @@ class ShopService {
     } catch (e) {
       print('[ShopService] Error in fetchShops: $e');
       rethrow;
+    }
+  }
+
+  // Helper method to fetch and parse details for a single shop
+  Future<void> _fetchAndParseShopDetails(Shop shop) async {
+    if (shop.detailsUrl.isNotEmpty) {
+      try {
+        print('[ShopService] Fetching details for ${shop.name} from ${shop.detailsUrl}');
+        final detailResponse = await http.get(Uri.parse(shop.detailsUrl), headers: {
+           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'
+        });
+        if (detailResponse.statusCode == 200) {
+          shop.deliveryDay = Shop.parseDeliveryDayFromDetailHtml(detailResponse.body);
+          print('[ShopService] Updated ${shop.name} with delivery day: ${shop.deliveryDay}');
+        } else {
+          print('[ShopService] Error fetching details for ${shop.name}: Status code ${detailResponse.statusCode}');
+        }
+      } catch (e) {
+        print('[ShopService] Error fetching/parsing details for ${shop.name}: $e');
+      }
+    } else {
+      print('[ShopService] Skipping details for ${shop.name} due to empty URL.');
     }
   }
 
