@@ -39,6 +39,8 @@ dependencies:
   provider: ^6.1.5
   firebase_auth: ^5.5.3
   flutter_signin_button: ^2.0.0
+  html: ^0.15.4
+  http: ^1.2.1
 
 dev_dependencies:
   flutter_test:

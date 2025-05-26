@@ -1,0 +1,821 @@
+Failed to Hot Restart: DebugAdapterException: app 'e268b609-2b84-4dc9-99ff-e10eb65f25a6' not foundI/flutter (13855): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(94)] Using the Impeller rendering backend (OpenGLES).
+I/flutter (13855): [ShopListWidget] initState called. Fetching shops...
+I/flutter (13855): [ShopListWidget] _fetchShopsData started.
+I/flutter (13855): [ShopService] Fetching shops from: https://secondhandy.com.pl?mylisting-ajax=1&action=get_listings&security=20a291621f&listing_type=place&listing_wrap=col-md-12+grid-item&proximity_units=km&form_data%5Bpage%5D=0&form_data%5Bpreserve_page%5D=false&form_data%5Bsearch_location%5D&form_data%5Blat%5D=false&form_data%5Blng%5D=false&form_data%5Bproximity%5D=30&form_data%5Bregion%5D=poznan&form_data%5Bsearch_keywords%5D&form_data%5Bcategory%5D&form_data%5Bdostawa%5D&form_data%5Btags%5D&form_data%5Bdodatkowe-informacje%5D&form_data%5Bopen-now%5D&form_data%5Bsort%5D=data-dostawy
+I/flutter (13855): [ShopListWidget] build called. isLoading: true, error: null, shops count: 0
+I/flutter (13855): [ShopService] API call successful. Response body snippet (first 500 chars): {"html":"<div class=\"col-md-12 grid-item\"><div class=\"lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-promoted priority-2\" data-id=\"listing-id-24021\" data-category-icon=\"\t&lt;div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;&gt;\t&lt;img width=&quot;75&quot; height=&quot;75&quot; src=&quot;https:\/\/secondhandy.com.pl\/wp-content\/uploads\/2022\/04\/sklep-kopia.png&quot; class=&qu
+I/flutter (13855): [ShopService] HTML content received, starting parse.
+I/flutter (13855): [ShopService] _parseShops: Found 80 shop elements to parse.
+I/flutter (13855): [ShopService] Parsed shop: Name: PrimaSort, Address: Jana Henryka Dąbrowskiego 75/3, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: 1Up Studio, Address: Polna 40, Delivery: null, Opening: 09:00 - 17:00
+I/flutter (13855): [ShopService] Parsed shop: Name: NaStaszica vintage, Address: Stanisława Staszica 6, Delivery: null, Opening: TYLKO PO UMÓWIENIU
+I/flutter (13855): [ShopService] Parsed shop: Name: Desire - francuska odzież używana, Address: Słowiańska 38c, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: BRAND second hand, Address: Plac Bernardyński 2, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Beaute - markowa odzież używana, Address: Garbary 64, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: KOP•CIUSZEK, Address: N/A, Delivery: null, Opening: N/A
+I/flutter (13855): [ShopService] Parsed shop: Name: Eco trend Second Hand Os. Lecha 121, Address: Osiedle Lecha 121, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Na Rondzie, Address: Grunwaldzka 44, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Rumpix Poznań, Address: Wierzbięcice 36, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Portobello Vintage Shop & Street Fashion, Address: Półwiejska 28, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Bibi Butik second hand, Address: 23 Października 32, Delivery: null, Opening: OTWARTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Komis odzieżowy by PANTHER BUSINESS, Address: Osiedle Orła Białego 79, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Butik Cyrkularny Centrum Handlowe Posnania, Address: Stanisława Matyi 2, Delivery: null, Opening: OTWARTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Loca Dąbrowskiego 46, Address: Jana Henryka Dąbrowskiego 46, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: My Second Hand, Address: Górna Wilda 75, Delivery: null, Opening: 09:00 - 18:30
+I/flutter (13855): [ShopService] Parsed shop: Name: Z Drugiej Ręki Poznań Dąbrowskiego 34, Address: Jana Henryka Dąbrowskiego 34, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: SecondHand Dąbrowskiego 54, Address: Jana Henryka Dąbrowskiego 54, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: CHiC Second Hand, Address: Osiedle Jana III Sobieskiego 1A, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Komis Dziecięcy Nicole and Jakub, Address: Szamarzewskiego 37, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Sprzedaż Odzieży Używanej Tarnowo Podgórne, Address: Poznańska 157, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: La Mode Głogowska 132, Address: Głogowska 132, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: NooNah, Address: Wielka 18, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Odzież używana Poznań Zwierzchowskiego, Address: Stanisława Zwierzchowskiego 10, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Coś na rzeczy, Address: Święty Marcin 45, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Odzież używana Poznań Polna, Address: Polna 23, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: SecondHand London, Address: Andrzeja I Władysława Niegolewskich 2-4, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Komoda Jeżyce, Address: Jana Henryka Dąbrowskiego 8, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Avanti Rynek Jeżycki, Address: rynek Jeżycki, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Avanti 28 Czerwca, Address: 28 Czerwca 1956 r. 133, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Best Brand, Address: Górna Wilda 91, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Miki SecondHand Czerwonak, Address: Gdyńska 31, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: London Look Second Hand, Address: Jana Henryka Dąbrowskiego 80, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Eldorado os. Lecha 43, Address: Osiedle Lecha 43, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: La Mode Św. Marcin, Address: Święty Marcin 34, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Koń na biegunach, Address: Sikorskiego 38, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: PREMIUM SECOND HAND Poznań 27 Grudnia 7, Address: 27 Grudnia 7, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Viva la Moda, Address: Stary Rynek 44, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Fashion Look, Address: Głogowska 75, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Eldorado Racjonalizatorów 3, Address: Racjonalizatorów 3, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: La Mode Głogowska 67, Address: Głogowska 67, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Vive Profit Poznań Św. Marcin, Address: Święty Marcin 24, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Zło.to, Address: Gwarna 7/100, Delivery: null, Opening: OTWARTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Idek, Address: Podgórna 8, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Werona os. Rusa, Address: osiedle Rusa 58, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: SecondHand from London św. Marcin, Address: Święty Marcin 66, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Eldorado Główna 45, Address: Główna 45, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Na Staszica Vintage, Address: Stanisława Staszica 6, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Westka, Address: N/A, Delivery: null, Opening: OTWARTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Elizabeth, Address: Grochowska 62, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Szafa Kopciuszka, Address: Górna Wilda 92, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Na Wagę - Odzież Używana, Address: Osiedle Lecha 40, Delivery: null, Opening: 09:00 - 17:00
+I/flutter (13855): [ShopService] Parsed shop: Name: Werona os. Zwycięstwa, Address: Stokrotka, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Komis Odzieży Markowej, Address: Górna Wilda 73, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Odzież Używana Poznań Półwiejska, Address: Półwiejska 16, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Bazar Jeżycki, Address: Jana Henryka Dąbrowskiego 88, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Pełna Szafa Poznań Sobieskiego, Address: Osiedle Jana III Sobieskiego 103/2, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Loca Dąbrowskiego 30, Address: Jana Henryka Dąbrowskiego 30, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Centrum Markowej Odzieży Używanej Poznań, Address: Osiedle Bolesława Chrobrego 101, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Pełna Szafa Poznań Śmiałego, Address: Osiedle Bolesława Śmiałego 104, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: SH PROJEKT SECOND HAND & OUTLET FROM BERLIN, Address: Głogowska 56, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Eldorado os. Powstań Narodowych 1, Address: Osiedle Powstań Narodowych 1, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Pełna Szafa Poznań os. Wichrowe Wzgórze, Address: Osiedle Wichrowe Wzgórze 105, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Pełna Szafa Poznań os. Przyjaźni, Address: osiedle Przyjaźni 132C, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: second hand ul. Dąbrowskiego 68, Address: Jana Henryka Dąbrowskiego 68, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Odzież z Anglii, Address: Polna 1, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: SecondHand Swrzędz Wrzesińska, Address: Wrzesińska 17, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Pełna Szafa Poznań os. Jagiellońskie, Address: Osiedle Jagiellońskie 120, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Lumpy u Lidy, Address: Szarych Szeregów 12, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Metamorfoza, Address: Rynkowa 22, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Poznańska szafa, Address: Książęca 12C, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Vintage Store Poznań, Address: Warszawska 99, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: UDO second hand Galeria Pestka, Address: Aleje Solidarności 47, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Kilo Laden, Address: Słowiańska 38F, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Cuda wianki - komis odzieżowy, Address: Galileusza 8, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Odzież nowa i używana Poznań, Address: Jana Henryka Dąbrowskiego, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Skład Charytatywny, Address: Grochowska 48, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Laboratorium Loo, Address: Aleje Marcinkowskiego 20, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Magazyn Dobra, Address: Święty Marcin 47, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopService] Parsed shop: Name: Butik Cyrkularny Centrum Handlowe Avenida, Address: Stanisława Matyi 2, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (13855): [ShopListWidget] Successfully fetched 80 shops.
+I/flutter (13855): [ShopListWidget] build called. isLoading: false, error: null, shops count: 80
+I/flutter (13989): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(94)] Using the Impeller rendering backend (OpenGLES).
+I/flutter (14115): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(94)] Using the Impeller rendering backend (OpenGLES).
+I/flutter (14115): [ShopListWidget] initState called. Fetching shops...
+I/flutter (14115): [ShopListWidget] _fetchShopsData started.
+I/flutter (14115): [ShopService] Fetching shops from: https://secondhandy.com.pl?mylisting-ajax=1&action=get_listings&security=20a291621f&listing_type=place&listing_wrap=col-md-12+grid-item&proximity_units=km&form_data%5Bpage%5D=0&form_data%5Bpreserve_page%5D=false&form_data%5Bsearch_location%5D&form_data%5Blat%5D=false&form_data%5Blng%5D=false&form_data%5Bproximity%5D=30&form_data%5Bregion%5D=poznan&form_data%5Bsearch_keywords%5D&form_data%5Bcategory%5D&form_data%5Bdostawa%5D&form_data%5Btags%5D&form_data%5Bdodatkowe-informacje%5D&form_data%5Bopen-now%5D&form_data%5Bsort%5D=data-dostawy
+I/flutter (14115): [ShopListWidget] build called. isLoading: true, error: null, shops count: 0
+I/flutter (14115): [ShopService] API call successful. Response body snippet (first 500 chars): {"html":"<div class=\"col-md-12 grid-item\"><div class=\"lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-promoted priority-2\" data-id=\"listing-id-24021\" data-category-icon=\"\t&lt;div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;&gt;\t&lt;img width=&quot;75&quot; height=&quot;75&quot; src=&quot;https:\/\/secondhandy.com.pl\/wp-content\/uploads\/2022\/04\/sklep-kopia.png&quot; class=&qu
+I/flutter (14115): [ShopService] HTML content received, starting parse.
+I/flutter (14115): [ShopService] _parseShops: Found 80 shop elements to parse.
+I/flutter (14115): [ShopService] Parsing element 1 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-promoted priority-2" data-id="listing-id-24021" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: PrimaSort, Address: Jana Henryka Dąbrowskiego 75/3, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 2 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo no-tagline has-info-fields level-featured priority-1" data-id="listing-id-28422" data-category-icon="	<i class=&quot;mi bookmark_border&quot; style=&quot;color: #fff; background: #ff8916; &quot;></i>	" data-cate...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: 1Up Studio, Address: Polna 40, Delivery: null, Opening: 09:00 - 17:00
+I/flutter (14115): [ShopService] Parsing element 3 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-11056" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: NaStaszica vintage, Address: Stanisława Staszica 6, Delivery: null, Opening: TYLKO PO UMÓWIENIU
+I/flutter (14115): [ShopService] Parsing element 4 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-12836" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Desire - francuska odzież używana, Address: Słowiańska 38c, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 5 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-12837" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: BRAND second hand, Address: Plac Bernardyński 2, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 6 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3289" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Beaute - markowa odzież używana, Address: Garbary 64, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 7 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-9784" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: KOP•CIUSZEK, Address: N/A, Delivery: null, Opening: N/A
+I/flutter (14115): [ShopService] Parsing element 8 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-11886" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Eco trend Second Hand Os. Lecha 121, Address: Osiedle Lecha 121, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 9 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-20354" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Na Rondzie, Address: Grunwaldzka 44, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 10 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-12396" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Rumpix Poznań, Address: Wierzbięcice 36, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 11 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-12835" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Portobello Vintage Shop & Street Fashion, Address: Półwiejska 28, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 12 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-17883" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Bibi Butik second hand, Address: 23 Października 32, Delivery: null, Opening: OTWARTE
+I/flutter (14115): [ShopService] Parsing element 13 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-7672" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Komis odzieżowy by PANTHER BUSINESS, Address: Osiedle Orła Białego 79, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 14 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-11201" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Butik Cyrkularny Centrum Handlowe Posnania, Address: Stanisława Matyi 2, Delivery: null, Opening: OTWARTE
+I/flutter (14115): [ShopService] Parsing element 15 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3284" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Loca Dąbrowskiego 46, Address: Jana Henryka Dąbrowskiego 46, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 16 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-28530" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: My Second Hand, Address: Górna Wilda 75, Delivery: null, Opening: 09:00 - 18:30
+I/flutter (14115): [ShopService] Parsing element 17 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-12944" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Z Drugiej Ręki Poznań Dąbrowskiego 34, Address: Jana Henryka Dąbrowskiego 34, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 18 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-10023" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: SecondHand Dąbrowskiego 54, Address: Jana Henryka Dąbrowskiego 54, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 19 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-17890" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: CHiC Second Hand, Address: Osiedle Jana III Sobieskiego 1A, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 20 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3298" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Komis Dziecięcy Nicole and Jakub, Address: Szamarzewskiego 37, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 21 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-17972" data-category-icon="	<i class=&quot;mi bookmark_border&quot; style=&quot;color: #fff; background: #ff8916; &quot;></i>	" data-category-color="#f...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Sprzedaż Odzieży Używanej Tarnowo Podgórne, Address: Poznańska 157, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 22 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3283" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&q...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: La Mode Głogowska 132, Address: Głogowska 132, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 23 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3293" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: NooNah, Address: Wielka 18, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 24 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3294" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Odzież używana Poznań Zwierzchowskiego, Address: Stanisława Zwierzchowskiego 10, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 25 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-10871" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Coś na rzeczy, Address: Święty Marcin 45, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 26 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3285" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Odzież używana Poznań Polna, Address: Polna 23, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 27 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3312" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: SecondHand London, Address: Andrzeja I Władysława Niegolewskich 2-4, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 28 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-2105" data-category-icon="	<i class=&quot;mi bookmark_border&quot; style=&quot;color: #fff; background: #ff8916; &quot;></i>	" data-catego...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Komoda Jeżyce, Address: Jana Henryka Dąbrowskiego 8, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 29 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3301" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Avanti Rynek Jeżycki, Address: rynek Jeżycki, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 30 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3303" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Avanti 28 Czerwca, Address: 28 Czerwca 1956 r. 133, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 31 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2777" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Best Brand, Address: Górna Wilda 91, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 32 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3281" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Miki SecondHand Czerwonak, Address: Gdyńska 31, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 33 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3311" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: London Look Second Hand, Address: Jana Henryka Dąbrowskiego 80, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 34 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-2769" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&q...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Eldorado os. Lecha 43, Address: Osiedle Lecha 43, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 35 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-2787" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&q...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: La Mode Św. Marcin, Address: Święty Marcin 34, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 36 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3277" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Koń na biegunach, Address: Sikorskiego 38, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 37 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-7306" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: PREMIUM SECOND HAND Poznań 27 Grudnia 7, Address: 27 Grudnia 7, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 38 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2757" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Viva la Moda, Address: Stary Rynek 44, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 39 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2774" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Fashion Look, Address: Głogowska 75, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 40 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-14368" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Eldorado Racjonalizatorów 3, Address: Racjonalizatorów 3, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 41 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3278" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&q...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: La Mode Głogowska 67, Address: Głogowska 67, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 42 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3307" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Vive Profit Poznań Św. Marcin, Address: Święty Marcin 24, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 43 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3297" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Zło.to, Address: Gwarna 7/100, Delivery: null, Opening: OTWARTE
+I/flutter (14115): [ShopService] Parsing element 44 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3306" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Idek, Address: Podgórna 8, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 45 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2766" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Werona os. Rusa, Address: osiedle Rusa 58, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 46 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-3314" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: SecondHand from London św. Marcin, Address: Święty Marcin 66, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 47 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-15493" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Eldorado Główna 45, Address: Główna 45, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 48 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-10760" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Na Staszica Vintage, Address: Stanisława Staszica 6, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 49 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-1810" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Westka, Address: N/A, Delivery: null, Opening: OTWARTE
+I/flutter (14115): [ShopService] Parsing element 50 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3273" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Elizabeth, Address: Grochowska 62, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 51 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3286" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Szafa Kopciuszka, Address: Górna Wilda 92, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 52 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-23529" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Na Wagę - Odzież Używana, Address: Osiedle Lecha 40, Delivery: null, Opening: 09:00 - 17:00
+I/flutter (14115): [ShopService] Parsing element 53 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-12833" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Werona os. Zwycięstwa, Address: Stokrotka, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 54 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3329" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Komis Odzieży Markowej, Address: Górna Wilda 73, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 55 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-17944" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Odzież Używana Poznań Półwiejska, Address: Półwiejska 16, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 56 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3274" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Bazar Jeżycki, Address: Jana Henryka Dąbrowskiego 88, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 57 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3316" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Pełna Szafa Poznań Sobieskiego, Address: Osiedle Jana III Sobieskiego 103/2, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 58 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-2754" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Loca Dąbrowskiego 30, Address: Jana Henryka Dąbrowskiego 30, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 59 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3276" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Centrum Markowej Odzieży Używanej Poznań, Address: Osiedle Bolesława Chrobrego 101, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 60 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3317" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Pełna Szafa Poznań Śmiałego, Address: Osiedle Bolesława Śmiałego 104, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 61 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-19725" data-category-icon="	<i class=&quot;mi bookmark_border&quot; style=&quot;color: #fff; background: #ff8916; &quot;></i>	" data-category-color="#f...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: SH PROJEKT SECOND HAND & OUTLET FROM BERLIN, Address: Głogowska 56, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 62 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 c27-verified has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-2780" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&q...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Eldorado os. Powstań Narodowych 1, Address: Osiedle Powstań Narodowych 1, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 63 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3318" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Pełna Szafa Poznań os. Wichrowe Wzgórze, Address: Osiedle Wichrowe Wzgórze 105, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 64 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3319" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Pełna Szafa Poznań os. Przyjaźni, Address: osiedle Przyjaźni 132C, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 65 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-10289" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: second hand ul. Dąbrowskiego 68, Address: Jana Henryka Dąbrowskiego 68, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 66 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2762" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Odzież z Anglii, Address: Polna 1, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 67 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2784" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: SecondHand Swrzędz Wrzesińska, Address: Wrzesińska 17, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 68 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3320" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Pełna Szafa Poznań os. Jagiellońskie, Address: Osiedle Jagiellońskie 120, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 69 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-17922" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot;...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Lumpy u Lidy, Address: Szarych Szeregów 12, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 70 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-4743" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Metamorfoza, Address: Rynkowa 22, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 71 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2772" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Poznańska szafa, Address: Książęca 12C, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 72 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-18008" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Vintage Store Poznań, Address: Warszawska 99, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 73 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-11205" data-category-icon="	<i class=&quot;mi bookmark_border&quot; style=&quot;color: #fff; background: #ff8916; &quot;></i>	" data-category-color="#f...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: UDO second hand Galeria Pestka, Address: Aleje Solidarności 47, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 74 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo has-tagline has-info-fields level-normal priority-0" data-id="listing-id-2783" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Kilo Laden, Address: Słowiańska 38F, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 75 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3292" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Cuda wianki - komis odzieżowy, Address: Galileusza 8, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 76 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2785" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Odzież nowa i używana Poznań, Address: Jana Henryka Dąbrowskiego, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 77 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-2761" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Skład Charytatywny, Address: Grochowska 48, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 78 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3310" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; h...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Laboratorium Loo, Address: Aleje Marcinkowskiego 20, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 79 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-3290" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;240&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Magazyn Dobra, Address: Święty Marcin 47, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopService] Parsing element 80 of 80:
+I/flutter (14115): [ShopService] Element HTML snippet: <div class="lf-item-container listing-preview type-place lf-type-2 has-logo no-tagline has-info-fields level-normal priority-0" data-id="listing-id-11200" data-category-icon="	<div class=&quot;term-icon image-icon&quot; style=&quot;color: #fff; background: #ff8916; &quot;>	<img width=&quot;75&quot; ...
+I/flutter (14115): [Shop.fromElement] Attempting .e-dostawa-badge. Found: null
+I/flutter (14115): [Shop.fromElement] No delivery day from badge or badge text empty.
+I/flutter (14115): [Shop.fromElement] Attempting info sections. Found 0 sections.
+I/flutter (14115): [Shop.fromElement] Before attempting ul[data-field="dostawa"], deliveryDayValue is: "null"
+I/flutter (14115): [Shop.fromElement] Condition met, attempting ul[data-field="dostawa"]
+I/flutter (14115): [Shop.fromElement] ul[data-field="dostawa"] not found.
+I/flutter (14115): [ShopService] Parsed shop: Name: Butik Cyrkularny Centrum Handlowe Avenida, Address: Stanisława Matyi 2, Delivery: null, Opening: ZAMKNIĘTE
+I/flutter (14115): [ShopListWidget] Successfully fetched 80 shops.
+I/flutter (14115): [ShopListWidget] build called. isLoading: false, error: null, shops count: 80

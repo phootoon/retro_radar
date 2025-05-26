@@ -41,7 +41,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 body: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [SignInButton(Buttons.Google, onPressed: _login)],
+                    children: [
+                      SignInButton(Buttons.Google, onPressed: _login),
+                      SizedBox(height: 20),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(builder: (context) => const HomeScreen(isGuestMode: true)),
+                          );
+                        },
+                        child: const Text('Later'),
+                      ),
+                    ],
                   ),
                 ),
               );

@@ -3,9 +3,11 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:retro_radar/blocs/auth_bloc.dart';
 import 'package:retro_radar/screens/login.dart';
 import 'package:provider/provider.dart';
+import 'package:retro_radar/widgets/shop_list_widget.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final bool isGuestMode;
+  const HomeScreen({super.key, this.isGuestMode = false});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -16,6 +18,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final authBloc = Provider.of<AuthBloc>(context);
 
+    if (widget.isGuestMode) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Secondhand Shops (Guest)')),
+        body: const ShopListWidget(),
+      );
+    }
+
     return StreamBuilder(
       stream: authBloc.currentUser,
       builder: (context, snapshot) {
@@ -24,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
           if (user != null) {
             //zalogowany
             return Scaffold(
+              appBar: AppBar(title: Text('Welcome ${user.displayName ?? ''}')),
               body: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
