@@ -20,19 +20,59 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    const seedColor = Colors.blue; // You can change this to your app's primary brand color
+
+    final lightTheme = ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.light,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: seedColor,
+        brightness: Brightness.light,
+      ),
+      // You can further customize AppBarTheme, TabBarTheme, etc., for light mode if needed
+      // For example, to ensure AppBar icons are black in light mode:
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.white, // Or from colorScheme.surface
+        foregroundColor: Colors.black, // For icons and title text
+        iconTheme: IconThemeData(color: Colors.black),
+        actionsIconTheme: IconThemeData(color: Colors.black),
+      ),
+      tabBarTheme: TabBarThemeData(
+        labelColor: seedColor,
+        unselectedLabelColor: Colors.black54,
+        indicatorColor: seedColor,
+      ),
+    );
+
+    final darkTheme = ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.dark,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: seedColor,
+        brightness: Brightness.dark,
+      ),
+      // For example, to ensure AppBar icons are white in dark mode:
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.grey[850], // Or from colorScheme.surface
+        foregroundColor: Colors.white,    // For icons and title text
+        iconTheme: const IconThemeData(color: Colors.white),
+        actionsIconTheme: const IconThemeData(color: Colors.white),
+      ),
+      tabBarTheme: TabBarThemeData(
+        labelColor: seedColor,
+        unselectedLabelColor: Colors.white70,
+        indicatorColor: seedColor,
+      ),
+    );
+
     return Provider(
       create: (context) => AuthBloc(),
       child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          useMaterial3: true,
-          brightness: Brightness.dark,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.blue,
-            brightness: Brightness.dark,
-          ),
-        ),
-        home: LoginScreen(),
+        title: 'Retro Radar', // Changed from Flutter Demo
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        themeMode: ThemeMode.system, // Automatically adapt to system theme
+        home: const LoginScreen(), // LoginScreen will handle navigation to MainTabsScreen
       ),
     );
   }

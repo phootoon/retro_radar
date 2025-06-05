@@ -1,15 +1,18 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:retro_radar/utils/map_utils.dart'; // Import the utility file
 
 class MapScreen extends StatefulWidget {
+  // Add a GlobalKey parameter if you need to call methods from outside
   const MapScreen({super.key});
 
   @override
-  State<MapScreen> createState() => _MapScreenState();
+  State<MapScreen> createState() => MapScreenState();
 }
 
-class _MapScreenState extends State<MapScreen> {
+// Make the State class public by removing the underscore
+class MapScreenState extends State<MapScreen> {
   late GoogleMapController mapController;
   final Set<Marker> _markers = {};
   bool _isLoading = true;
@@ -22,117 +25,96 @@ class _MapScreenState extends State<MapScreen> {
   @override
   void initState() {
     super.initState();
-    _loadStores();
+    loadStores(); // Call the public method
   }
 
-  Future<void> _loadStores() async {
+  // Make loadStores public
+  Future<void> loadStores() async {
+    if (!mounted) return; // Add mounted check at the beginning
+    setState(() {
+      _isLoading = true;
+    });
     try {
       final stores =
-          await FirebaseFirestore.instance.collection('stores').get();
-      print("📌 Znaleziono ${stores.docs.length} sklepów");
+          await FirebaseFirestore.instance.collection('storelist').get();
+      print("📌 Znaleziono ${stores.docs.length} sklepów w 'storelist' (mapa)");
 
-      setState(() {
-        _markers.clear();
-        for (var doc in stores.docs) {
-          final data = doc.data();
-          final locationString = data['location'] as String?;
+      final Set<Marker> newMarkers = {};
 
-          if (locationString != null) {
-            final location = _parseLocation(locationString);
+      for (var doc in stores.docs) {
+        final data = doc.data();
+        final locationString = data['location'] as String?;
+        final name = data['name'] as String? ?? 'Sklep bez nazwy';
 
-            if (location != null) {
-              print(
-                "✅ Dodaję znacznik: ${data['name']} (${location.latitude}, ${location.longitude})",
-              );
+        if (locationString != null) {
+          // Use parseLocation from map_utils.dart
+          final location = parseLocation(locationString);
 
-              _markers.add(
-                Marker(
+          if (location != null) {
+            print(
+              "✅ Dodaję znacznik (mapa): $name (${location.latitude}, ${location.longitude})",
+            );
+
+            newMarkers.add(
+              Marker(
                   markerId: MarkerId(doc.id),
                   position: location,
                   infoWindow: InfoWindow(
-                    title: data['name'] ?? 'Sklep',
-                    snippet: data['address'] ?? '',
+                    title: name,
                   ),
                   icon: BitmapDescriptor.defaultMarkerWithHue(
                     BitmapDescriptor.hueViolet,
                   ),
-                ),
-              );
-            } else {
-              print("⚠️ Nieprawidłowy format lokalizacji: $locationString");
-            }
+                  onTap: () {
+                    // Use showShopDetailsBottomSheet from map_utils.dart
+                    showShopDetailsBottomSheet(context, data);
+                  }),
+            );
           } else {
-            print("⚠️ Brak pola 'location' w dokumencie ${doc.id}");
+            print("⚠️ Nieprawidłowy format lokalizacji (mapa): $locationString dla $name");
           }
+        } else {
+          print("⚠️ Brak pola 'location' (mapa) w dokumencie ${doc.id} ($name)");
         }
-        _isLoading = false;
-      });
-    } catch (e) {
-      print("❌ Błąd przy pobieraniu sklepów: $e");
-      setState(() {
-        _isLoading = false;
-      });
-    }
-  }
-
-  LatLng? _parseLocation(String locationString) {
-    try {
-      final parts = locationString.split(',');
-      if (parts.length == 2) {
-        final lat = double.parse(parts[0].trim());
-        final lng = double.parse(parts[1].trim());
-        return LatLng(lat, lng);
       }
-      return null;
+      if (mounted) {
+        setState(() {
+          _markers.clear();
+          _markers.addAll(newMarkers);
+          _isLoading = false;
+        });
+      }
     } catch (e) {
-      print("🚨 Błąd parsowania lokalizacji: $e");
-      return null;
+      print("❌ Błąd przy pobieraniu sklepów (mapa): $e");
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Lumpy Poznań'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.refresh),
-            onPressed: _loadStores,
-            tooltip: 'Odśwież dane',
-          ),
-        ],
-      ),
-      body: Stack(
-        children: [
-          GoogleMap(
-            initialCameraPosition: _initialCameraPosition,
-            onMapCreated: (controller) => mapController = controller,
-            markers: _markers,
-            myLocationEnabled: true,
-            myLocationButtonEnabled: true,
-            mapType: MapType.normal,
-          ),
-          if (_isLoading)
-            const Center(
-              child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.purple),
-              ),
+    // The Scaffold and AppBar are removed from here.
+    // The MainTabsScreen will provide the Scaffold and AppBar.
+    return Stack(
+      children: [
+        GoogleMap(
+          initialCameraPosition: _initialCameraPosition,
+          onMapCreated: (controller) => mapController = controller,
+          markers: _markers,
+          myLocationEnabled: true,
+          myLocationButtonEnabled: true,
+          mapType: MapType.normal,
+        ),
+        if (_isLoading)
+          const Center(
+            child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.purple),
             ),
-        ],
-      ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {
-      //     if (_markers.isNotEmpty) {
-      //       mapController.animateCamera(
-      //         CameraUpdate.newLatLngZoom(_markers.first.position, 14),
-      //       );
-      //     }
-      //   },
-      //   backgroundColor: Colors.purple,
-      //   child: const Icon(Icons.location_searching, color: Colors.white),
-      //   tooltip: 'Pokaż pierwszy sklep',
-      // ),
+          ),
+      ],
     );
   }
 }

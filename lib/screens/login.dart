@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:retro_radar/blocs/auth_bloc.dart';
 import 'package:retro_radar/screens/home.dart';
-import 'package:retro_radar/screens/map.dart';
+import 'package:retro_radar/screens/main_tabs_screen.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -18,7 +18,9 @@ class _LoginScreenState extends State<LoginScreen> {
   void _login() async {
     setState(() => isLoading = true);
     await Provider.of<AuthBloc>(context, listen: false).loginGoogle();
-    setState(() => isLoading = false);
+    if (mounted) {
+        setState(() => isLoading = false);
+    }
   }
 
   @override
@@ -28,10 +30,20 @@ class _LoginScreenState extends State<LoginScreen> {
     return StreamBuilder(
       stream: authBloc.currentUser,
       builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting && isLoading) {
+             return const Scaffold(
+                body: Center(child: CircularProgressIndicator()),
+              );
+        }
         if (snapshot.connectionState == ConnectionState.active) {
           final user = snapshot.data;
           if (user != null) {
-            return const HomeScreen();
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const MainTabsScreen()),
+              );
+            });
+            return const Scaffold(body: Center(child: CircularProgressIndicator()));
           } else {
             if (isLoading) {
               return const Scaffold(
@@ -45,12 +57,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       SignInButton(Buttons.Google, onPressed: _login),
                       TextButton(
-                        child: Text("Skip"),
+                        child: const Text("Pomiń logowanie i przejdź do mapy"),
                         onPressed: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => MapScreen(),
+                              builder: (context) => const MainTabsScreen(),
                             ),
                           );
                         },
