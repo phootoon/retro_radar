@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:retro_radar/blocs/auth_bloc.dart';
-import 'package:retro_radar/screens/home.dart';
 import 'package:retro_radar/screens/main_tabs_screen.dart';
 import 'package:provider/provider.dart';
 

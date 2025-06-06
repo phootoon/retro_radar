@@ -1,15 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:retro_radar/utils/map_utils.dart'; // Import the utility file
+import 'package:url_launcher/url_launcher.dart'; // For launching URLs
 
 class ShopListScreen extends StatefulWidget {
   const ShopListScreen({super.key});
 
   @override
-  State<ShopListScreen> createState() => _ShopListScreenState();
+  State<ShopListScreen> createState() => ShopListScreenState();
 }
 
-class _ShopListScreenState extends State<ShopListScreen> {
+class ShopListScreenState extends State<ShopListScreen> {
   List<Map<String, dynamic>> _shops = [];
   bool _isLoading = true;
   String _error = '';
@@ -17,10 +17,10 @@ class _ShopListScreenState extends State<ShopListScreen> {
   @override
   void initState() {
     super.initState();
-    _loadShopList();
+    loadShopList();
   }
 
-  Future<void> _loadShopList() async {
+  Future<void> loadShopList() async {
     if (!mounted) return;
     setState(() {
       _isLoading = true;
@@ -58,13 +58,13 @@ class _ShopListScreenState extends State<ShopListScreen> {
     return Scaffold(
       // AppBar is handled by MainTabsScreen
       body: RefreshIndicator(
-        onRefresh: _loadShopList,
-        child: _buildBody(),
+        onRefresh: loadShopList,
+        child: buildBody(),
       ),
     );
   }
 
-  Widget _buildBody() {
+  Widget buildBody() {
     if (_isLoading) {
       return const Center(
         child: CircularProgressIndicator(
@@ -83,7 +83,7 @@ class _ShopListScreenState extends State<ShopListScreen> {
               Text(_error, textAlign: TextAlign.center),
               const SizedBox(height: 16),
               ElevatedButton(
-                onPressed: _loadShopList,
+                onPressed: loadShopList,
                 child: const Text('Spróbuj ponownie'),
               )
             ],
@@ -106,17 +106,67 @@ class _ShopListScreenState extends State<ShopListScreen> {
         final address = shop['address'] as String? ?? 'Brak adresu';
         final ratingRaw = shop['rating'];
         final rating = (ratingRaw is num) ? ratingRaw.toDouble() : null;
+        final openingHours = shop['opening_hours'] as String?;
+        final deliveryDay = shop['delivery_day'] as String?;
+        final detailsUrl = shop['details_url'] as String?;
 
         return Card(
           margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
-          child: ListTile(
+          child: ExpansionTile(
             title: Text(name),
-            subtitle: Text(address + (rating != null ? '\nOcena: $rating ★' : '')),
-            isThreeLine: rating != null, // Make list tile taller if rating is present
-            onTap: () {
-              showShopDetailsBottomSheet(context, shop);
-            },
-            trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+            subtitle: Text(address),
+            childrenPadding: const EdgeInsets.all(16.0),
+            expandedCrossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              if (openingHours != null && openingHours.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Text("Godziny otwarcia: $openingHours"),
+                ),
+              if (deliveryDay != null && deliveryDay.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Text("Dzień dostawy: $deliveryDay"),
+                ),
+              if (rating != null)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Text("Ocena: $rating ★"),
+                ),
+              if (detailsUrl != null && detailsUrl.isNotEmpty)
+                InkWell(
+                  onTap: () async {
+                    final Uri url = Uri.parse(detailsUrl);
+                    if (await canLaunchUrl(url)) {
+                      await launchUrl(url);
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Nie można otworzyć linku: $detailsUrl'),
+                        ),
+                      );
+                    }
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Text(
+                      'Zobacz szczegóły online',
+                      style: TextStyle(
+                        color: Theme.of(context).colorScheme.primary,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ),
+                ),
+              if ((openingHours == null || openingHours.isEmpty) &&
+                  (deliveryDay == null || deliveryDay.isEmpty) &&
+                  rating == null &&
+                  (detailsUrl == null || detailsUrl.isEmpty))
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 8.0),
+                  child: Text("Brak dodatkowych informacji."),
+                ),
+            ],
           ),
         );
       },

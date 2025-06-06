@@ -31,16 +31,9 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        //api key
+        manifestPlaceholders["GOOGLE_MAPS_API_KEY"] = System.getenv("GOOGLE_MAPS_API_KEY") ?: "MISSING_API_KEY"
 
-        // Read API key from gradle.properties
-        val localProperties = java.util.Properties()
-        val localPropertiesFile = rootProject.file("android/gradle.properties") // Adjusted path to be relative to rootProject
-        if (localPropertiesFile.exists()) {
-            localPropertiesFile.inputStream().use { input ->
-                localProperties.load(input)
-            }
-        }
-        manifestPlaceholders["GOOGLE_MAPS_API_KEY"] = localProperties.getProperty("GOOGLE_MAPS_API_KEY", "MISSING_API_KEY_IN_PROPERTIES")
     }
 
     buildTypes {

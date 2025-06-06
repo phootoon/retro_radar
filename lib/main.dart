@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:retro_radar/blocs/auth_bloc.dart';
-import 'package:retro_radar/screens/login.dart';
+import 'package:retro_radar/screens/main_tabs_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
         theme: lightTheme,
         darkTheme: darkTheme,
         themeMode: ThemeMode.system, // Automatically adapt to system theme
-        home: const LoginScreen(), // LoginScreen will handle navigation to MainTabsScreen
+        home: const MainTabsScreen(), // Set MainTabsScreen as the home screen
       ),
     );
   }

@@ -40,6 +40,7 @@ class MainTabsScreen extends StatefulWidget {
 class _MainTabsScreenState extends State<MainTabsScreen> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   final GlobalKey<MapScreenState> _mapScreenKey = GlobalKey<MapScreenState>();
+  final GlobalKey<ShopListScreenState> _shopListScreenKey = GlobalKey<ShopListScreenState>();
 
   @override
   void initState() {
@@ -83,8 +84,12 @@ class _MainTabsScreenState extends State<MainTabsScreen> with SingleTickerProvid
             // labelColor: Theme.of(context).colorScheme.secondary,
             // unselectedLabelColor: Theme.of(context).textTheme.bodyLarge?.color?.withOpacity(0.7),
             onTap: (index) {
-              if (index == _tabController.index && index == 0) {
-                _mapScreenKey.currentState?.loadStores();
+              if (index == _tabController.index) {
+                if (index == 0) {
+                  _mapScreenKey.currentState?.loadStores();
+                } else if (index == 1) {
+                  _shopListScreenKey.currentState?.loadShopList();
+                }
               }
             },
           ),
@@ -94,7 +99,7 @@ class _MainTabsScreenState extends State<MainTabsScreen> with SingleTickerProvid
           physics: const NeverScrollableScrollPhysics(),
           children: [
             MapScreen(key: _mapScreenKey),
-            const ShopListScreen(),
+            ShopListScreen(key: _shopListScreenKey),
             StreamBuilder<User?>(
               stream: authBloc.currentUser, // Listening to Firebase User object
               builder: (context, snapshot) {
